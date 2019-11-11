@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+
+h2, p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header-container {
+    border: 2px solid green;
+    margin: 0 auto;
+}
+
+.navigation {
+    border: 2px solid green;
+    margin: 0 auto;
+}
+
+.navigation-ul > li {
+    display: inline;
+}
