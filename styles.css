@@ -1,33 +1,76 @@
-body {
-    margin: 0;
-}
-
-h2, p {
-    margin: 0;
-}
-
+/* Reset CSS */
+body, 
+h1, 
+p, 
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
+/* */
 
-.container {
-    border: 2px solid green;
-    display: flex;
-    flex-direction: column;
+header {
+    background: #f8f8f8;
+    padding: 2em 0;
 }
 
-.main-header-container {
-    border: 2px solid green;
+.container {
     margin: 0 auto;
+    max-width: 900px;
+    width: 90%;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .main-header-container {
+    text-align: center;
+} */
+
+.main-header {
+    font-family: Lora, sans-serif;
+    font-weight: 400;
+}
+
+.main-header-text {
+    color: #1792D2;
+    font-family: Ubuntu, sans-serif;
+    font-size: .75rem;
+    font-weight: 700;
 }
 
 .navigation {
-    border: 2px solid green;
-    margin: 0 auto;
+    padding: 1em;
 }
 
-.navigation-ul > li {
-    display: inline;
+.nav-list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav-list-item {
+    margin-left: 2em;
+}
+
+.nav-list-link {
+    color: #707070;
+    font-family: Ubuntu;
+    padding: 0.05em 0;
+    text-decoration: none;
+}
+
+.nav-list-link:hover,
+.nav-list-link:focus {
+    color: #1792d2;
+}
+
+.current-page {
+    border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+    color: #707070;
 }
